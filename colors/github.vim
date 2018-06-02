@@ -53,9 +53,10 @@ let s:ghc.diff_remove_dark  = ['FCB9C1', 217]
 
 " Color used when selecting a line
 let s:ghc.sun = ['FFFBDF', 230]
+let s:ghc.light_blue = ['BFDCFF', 230]
 
 " When seraching using the GitHub search, the color is slightly darker
-let s:ghc.sun_search = ['FFFEC9', 230]
+let s:ghc.sun_search = ['FFF299', 230]
 
 " Colors used in different areas trought the UI. As such, those are also used
 " for vim UI elements only.
@@ -133,8 +134,8 @@ call s:HL('MatchParen', 'fire', '', 'none')
 call s:HL('NonText',    'cloud', 'bg')
 call s:HL('SpecialKey', 'cloud', 'bg')
 
-call s:HL('Visual',    '',  'sun')
-call s:HL('VisualNOS', '',  'sun')
+call s:HL('Visual',    '',  'light_blue')
+call s:HL('VisualNOS', '',  'light_blue')
 
 call s:HL('Search',    'black', 'sun_search', 'bold')
 call s:HL('IncSearch', 'black', 'sun_search',    'bold')
@@ -142,7 +143,7 @@ call s:HL('IncSearch', 'black', 'sun_search',    'bold')
 call s:HL('Underlined', 'fg', '', 'underline')
 
 call s:HL('StatusLine',   'black', 'white')
-call s:HL('StatusLineNC', 'gray', 'white', 'none')
+call s:HL('StatusLineNC', 'white', 'gray', 'none')
 
 call s:HL('Directory', 'plum', '')
 
@@ -334,3 +335,5 @@ call s:HL('yamlKey', 'grass')
 
 " }}}
 " }}}
+
+:hi Error ctermfg=160 ctermbg=9 guifg=#D73A49 guibg=Yellow

@@ -1,3 +1,8 @@
+
+changed selection color to `light blue`, and `Error` to `red on yellow` instead of `light gray on red`
+
+---
+
 # github.vim
 
 github.vim is a vim theme, optimized for true colors enviroments. 
